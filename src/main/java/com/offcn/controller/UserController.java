@@ -40,6 +40,7 @@ public class UserController {
     }
     @RequestMapping("delete")
     public String delete(Integer id){
+        System.out.println("测试需要修改的提交。。。。");
         userService.delete(id);
         return "redirect:findAll";
     }
